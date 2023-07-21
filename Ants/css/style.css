@@ -1,0 +1,310 @@
+@import url("https://fonts.cdnfonts.com/css/rubik");
+@import url("https://fonts.cdnfonts.com/css/inter");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url("button.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body{
+  background-image: url(../img/map.webp);
+}
+
+header{
+  width: 1366px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo,
+.navbar__menu,
+.navbar__support {
+  display: flex;
+  align-items: center;
+  margin: 25px 1.5% 25px 1.5%;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.logo__codename {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Rubik", serif, sans-serif;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.logo__error-link {
+  width: 196px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Inter", serif, sans-serif;
+  margin-left: 20px;
+}
+
+.menu__input{
+  display: none;
+}
+
+.menu-toggle {
+  width: 176px;
+  height: 35px;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", serif, sans-serif;
+  margin-right: 10px;
+  margin-left: 3px;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+}
+
+.menu__welcome-block {
+  display: none;
+  overflow: hidden;
+  height: 0;
+  background-color: #f0f0f0;
+}
+
+.welcome-title{
+  padding-top: 95px;
+  text-align: center;
+  font-size: 64px;
+  opacity: 1;
+}
+
+.welcome-text{
+  display: inline-block;
+  margin: 64px 120px 0 140px;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.welcome-link{
+  text-decoration: underline;
+}
+
+.welcome-link__enter{
+  color: #EFB648;
+}
+
+.arrow {
+  width: 15px;
+  color: white;
+}
+
+.arrow1{
+  position: relative;
+  left: -240px;
+}
+
+.arrow2{
+  margin-right: -80px;
+} 
+
+.language {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 10px;
+}
+
+.language-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.support-link,
+.support-help {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.registration-input{
+  display: none;
+}
+
+.registration-toggle {
+  width: 196px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Inter", serif, sans-serif;
+}
+
+.support__welcome-block {
+  display: none;
+  overflow: hidden;
+  height: 0;
+  background-color: #f0f0f0;
+}
+
+.welcome-title{
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 40px;
+}
+
+.registration-form{
+  padding: 40px;
+}
+
+.registration-form__label{
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+.registration-form__input{
+  width: 410px;
+  height: 40px;
+  color: black;
+}
+
+.registration-form__hr{
+  width: 410px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.registration-form__submit{
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 5px;
+  background: #EFB648;
+  backdrop-filter: blur(30px);
+  padding: 6px 10px;
+  display: inline-block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.registration-form__login-info{
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400; 
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.registration-form__login-link{
+  color: #EFB648;
+  text-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.registration-form__footer{
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400; 
+  line-height: normal;
+  margin: -10px;
+}
+
+
+
+
+
+
+
+
+
+.logo__codename:hover,
+.language:hover,
+.support-link:hover,
+.support-help:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logo__error-link:hover,
+.menu-toggle:hover,
+.registration-toggle:hover{
+  background-color: #b9b9b9;
+  cursor: pointer;
+}
+
+.registration-form__login-link:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.registration-form__submit:hover{
+  background-color: #ec9e01;
+  cursor: pointer;
+}

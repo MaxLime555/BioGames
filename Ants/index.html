@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Муравьи. Игра. Приложение. Браузерное развитие игры.">
+    <meta name="description" content="Браузерная игра, симулирующая поведение муравьев, с эелементами стратегии и песочницы">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BioGames</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo" src="img/logo.png" alt="logo game"></picture>
+                <a class="logo__codename" href="index.html">CODENAME: XXX</a>
+                <a class="logo__error-link" href="#">СООБЩИТЬ ОБ ОШИБКЕ</a>
+            </div>
+        
+            <div class="navbar__menu">
+                <input class="menu__input" type="checkbox" id="menu__input"/>
+                <label class="menu-toggle" for="menu__input" id="menu-toggle">РАЗВЕРНУТЬ</label>
+                <div class="menu__welcome-block">
+                    <h1 class="welcome-title">Добро пожаловать!</h1>
+                    <p class="welcome-text">
+                        Перед вашими глазами предстаёт заранее сгенерированная симуляция муравьёв. 
+                        Вы можете <a class="welcome-link" href="#">продолжить наблюдать без ограничений, 
+                        свернув данное окно</a>, или попробовать <a class="welcome-link" href="#">
+                        создать собственную симуляцию</a> со своими настройками, 
+                        <a class="welcome-link__enter" href="#">зарегистрировавшись</a>.
+                    </p>
+                </div>
+                <p class="arrow arrow1">&darr;</p>
+                <p class="arrow arrow2">&darr;</p>
+            </div>
+        
+            <div class="navbar__support">
+        
+                <p class="language">RU</p>
+                <picture><source srcset="img/ru.webp" type="image/webp"><img class="language-icon" src="img/ru.png" alt="language"></picture>
+                <p class="support-link">ПОДДЕРЖАТЬ<br>ПРОЕКТ</p>
+                <p class="support-help">СПРАВКА</p>
+        
+                <input class="registration-input" type="checkbox" id="registration-input"/>
+                <label class="registration-toggle" for="registration-input" id="registration-toggle">ЗАРЕГИСТРИРОВАТЬСЯ</label>
+        
+                <div class="support__welcome-block" id="modal-enter">
+                    <h3 class="welcome-title">Войдите в аккаунт</h3>
+                    <form class="registration-form">
+                        <label class="registration-form__label" for="login">Логин:</label><br>
+                        <input class="registration-form__input" id="login" type="text" placeholder="Введите логин"><br>
+                        <label class="registration-form__label" for="password">Пароль:</label><br>
+                        <input class="registration-form__input" id="password" type="password" placeholder="Введите пароль"><br>
+                        <label class="registration-form__label" id="for-confirm" for="confirm">Подтверждение пароля:</label><br>
+                        <input class="registration-form__input" id="confirm" type="password" placeholder="Подтвердите пароль"><br>
+                        <hr class="registration-form__hr"><br>
+                        <a class="registration-form__submit">ВОЙТИ</a><br>
+                        <p class="registration-form__login-info">У вас еще нет аккаунта?
+                            <a class="registration-form__login-link" id="registration-link" href="#">Зарегистрироваться</a>
+                        </p><br>
+                        <p class="registration-form__footer">© 2023 Created by BioGames</p>
+                    </form>
+                </div>
+
+                <div class="support__welcome-block" id="modal-registration">
+                    <h3 class="welcome-title">Создайте аккаунт</h3>
+                    <form class="registration-form">
+                        <label class="registration-form__label" for="login">Логин:</label><br>
+                        <input class="registration-form__input" id="login" type="text" placeholder="Введите логин"><br>
+                        <label class="registration-form__label" for="password">Пароль:</label><br>
+                        <input class="registration-form__input" id="password" type="password" placeholder="Введите пароль"><br>
+                        <label class="registration-form__label" for="confirm">Подтверждение пароля:</label><br>
+                        <input class="registration-form__input" id="confirm" type="password" placeholder="Подтвердите пароль"><br>
+                        <hr class="registration-form__hr"><br>
+                        <a class="registration-form__submit">ЗАРЕГИСТРИРОВАТЬСЯ</a><br>
+                        <p class="registration-form__login-info">Уже есть аккаунт? 
+                            <a class="registration-form__login-link" id="enter-link" href="#">Войти</a>
+                        </p><br>
+                        <p class="registration-form__footer">© 2023 Created by BioGames</p>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>

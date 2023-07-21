@@ -1,0 +1,46 @@
+#menu__input:checked ~ .menu-toggle{
+    position: relative;
+    top: 450px;
+    z-index: 3;
+}
+
+#menu__input:checked ~ .menu__welcome-block {
+    display: block;
+    width: 1366px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    color: #000000;
+    background: rgba(0, 0, 0, 0.7);
+    height: 470px; 
+    margin: 0 auto;
+  }
+  
+#menu__input:checked ~ .arrow1,
+#menu__input:checked ~ .arrow2{
+    position: relative;
+    top: 450px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+  
+#menu__input:checked ~ .arrow1{
+    left: -240px;
+}
+
+#registration-input:checked ~ #toggle-label{
+    display: none;
+}
+
+#registration-input:checked ~ .support__welcome-block {
+    display: block;
+    width: 500px;
+    height: 545px;
+    position: absolute;
+    top: 100px;
+    left: 433px;
+    border-radius: 10px;
+    background: rgba(15, 23, 42, 0.80);
+    backdrop-filter: blur(25px);
+    z-index: 3; 
+}
